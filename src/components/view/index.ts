@@ -1,1 +1,1 @@
-export * as FindMine from './FindMine';
+export * from './FindMine';

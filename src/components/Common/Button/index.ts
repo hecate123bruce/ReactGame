@@ -9,21 +9,28 @@ export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   hovercolor?: string,
   radius?: string,
   margin?: string,
-  hoverFontColor?: string
+  hoverFontColor?: string,
+  width?: string,
+  height?: string
 }
 
 export const Button = styled.button<IButton>`
-  background-color: ${props => props.backgroundcolor};
-  border: none;
-  border-radius: ${props => props.radius || '5px'};
+  width: ${props => props.width || '100%'};
+  height: ${props => props.height || ''};
   color: ${props => props.color};
-  padding: ${props => props.padding};
+  font-size: ${props => props.fontSize || '.875rem'};
+  background-color: ${props => props.backgroundcolor};
   text-align: center;
-  transition-duration: 0.4s;
   text-decoration: none;
-  font-size: ${props => props.fontSize};
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  line-height:1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 2px 0 rgba(0,0,0,.12);
+  border-radius: ${props => props.radius || '5px'};
+  padding: ${props => props.padding};
+  transition-duration: 0.4s;
   cursor: pointer;
-  width: 100%;
   margin: ${props => props.margin || '0 0 0 0'};
   &:hover {
     background-color: ${props => props.hovercolor};
