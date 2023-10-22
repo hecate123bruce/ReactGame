@@ -13,13 +13,21 @@ export const ColumnDiv = styled.div`
 `
 
 export const SpaceDiv = styled.div`
-  width: 10px
+  width: 16px
 `
 
 export const DividerDiv = styled.div`
-  width: 8px;
+  width: .125rem;
   background-color: #11202d;
   height: 20px;
   z-index: 10;
-  margin-left: -2px
+`
+
+export const DividerHDiv = styled.div`
+  width: 50%;
+  background-color: #304452;
+  height: 3px;
+  z-index: 10;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 `

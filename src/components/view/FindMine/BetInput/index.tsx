@@ -10,11 +10,11 @@ interface BetInputPops extends CustomInput.InputProps {
 export const BetInput: React.FC<BetInputPops> = (props) => {
   const buttons: CustomInput.InputButton[] = [
     {
-      name: '1/2',
+      name: '½',
       onClick: props.divideAmount
     },
     {
-      name: '2x',
+      name: '2×',
       onClick: props.multiAmount
     }
   ]
