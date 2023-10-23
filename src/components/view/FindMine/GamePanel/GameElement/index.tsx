@@ -2,9 +2,9 @@ import React from 'react';
 import { GameElementStyle, ImageButton } from '../index.style';
 import { GameProps } from '../type';
 import { GameType } from '..';
-import gemUrl from './img/jewel.svg';
-import bombUrl from './img/bomb.svg';
-import exploreUrl from './img/explosion.gif';
+import gemUrl from 'img/jewel.svg';
+import bombUrl from 'img/bomb.svg';
+import exploreUrl from 'img/explosion.gif';
 
 export const GameElement: React.FC<GameProps> = (props) => {
   return (

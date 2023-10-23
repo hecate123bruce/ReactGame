@@ -17,9 +17,9 @@ import {
 
 import * as Div from "../../Div";
 
-import icondollar from '../img/dollar.png';
-import iconjewel from '../img/disabled_jewel.png';
-import iconbomb from '../img/disabled_bomb.png';
+import icondollar from 'img/dollar.png';
+import iconjewel from 'img/disabled_jewel.png';
+import iconbomb from 'img/disabled_bomb.png';
 
 export const Input: React.FC<InputProps> = (props) => {
   const { 
@@ -29,7 +29,8 @@ export const Input: React.FC<InputProps> = (props) => {
     rightLabel,
     buttons,
     iconPosition,
-    backgroundColor } = props;
+    backgroundColor
+  } = props;
 
   return (
     <InputDiv width={String(width)}>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CustomInput } from '../../../Common';
+import { CustomInput } from 'components';
 
 interface BetInputPops extends CustomInput.InputProps {
   divideAmount: () => void,

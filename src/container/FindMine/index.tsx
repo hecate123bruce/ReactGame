@@ -4,20 +4,17 @@ import {
   Container, 
   Div,
   CustomInput,
-  Buttons
-} from '../../components/Common';
-import { 
+  Buttons,
   BetInput, 
   BetSelect, 
   SideBar,
   GameType,
   Game,
   GameStyle
-} from '../../components/view/FindMine';
+} from 'components';
 
-import iconDollar from '../../components/Common/Input/img/dollar.png';
+import iconDollar from 'img/dollar.png';
 import { IGameStatus } from '../../type';
-
 
 export const FindMine: React.FC = () => {
   const [amount, setAmount] = useState<number>(0);

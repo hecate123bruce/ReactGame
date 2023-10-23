@@ -1,2 +1,2 @@
-export * as Common from './Common';
-export * as view from './view';
+export * from './common';
+export * from './view';

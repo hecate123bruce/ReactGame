@@ -1,6 +1,6 @@
 import React from 'react';
-import { CustomInput } from '../../../Common';
-import { SelectProps } from '../../../Common/Input/index.style';
+import { CustomInput } from 'components';
+import { SelectProps } from 'components/common/Input/index.style';
 
 export const BetSelect: React.FC<SelectProps> = (props) => {
   
